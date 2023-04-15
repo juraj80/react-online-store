@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.4px;
+}
+
+:root {
+  --white: rgb(255, 255, 255);
+  --bg: rgb(226, 226, 226);
+  --bg2: rgb(237, 237, 237);
+  --bg3: rgb(214, 214, 214);
+  --text: rgb(33, 33, 33);
+  --primary: rgb(101, 58, 230);
+
+  --border-radius: 4px;
+
+  --sm-spacing: 8px;
+  --md-spacing: 16px;
+  --lg-spacing: 32px;
+
+  --sm: 37.5em;
+  --md: 48em;
+  --lg: 64em;
+
+  --box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+    0 8px 16px rgba(0, 0, 0, 0.11);
+}
+
+.blue-button {
+  color: white;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.header {
+  font-size: 20px;
+}
+
+.table {
+  /* border: 1px solid black; */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.thead {
+  /* background-color: #a8abaf; */
+  /* color: white; */
+  position: sticky;
+  z-index: 100;
+}
+
+.tr-head {
+  background: var(--bg);
+}
+
+.th {
+  padding: var(--sm-spacing) var(--md-spacing);
+  color: var(--text);
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.item-col {
+  text-align: left;
+}
+
+.tr-body {
+  background: var(--white);
+}
+.tr-body-bt {
+  background: var(--white);
+}
+
+.td {
+  padding: var(--md-spacing);
+  color: var(--text);
+  font-size: 14px;
+  font-weight: lighter;
+  border-bottom: 2px solid var(--bg2);
+}
+
+.table-input {
+  border: 1px solid var(--bg3);
+  border-radius: var(--border-radius);
+  padding: var(--sm-spacing);
+  font-size: 14px;
+  font-weight: lighter;
+  color: var(--text);
+  width: 45px;
+}
+
+.col-left {
+  text-align: left;
+}
+.col-right {
+  text-align: right;
+}
+
+.item-row {
+  display: flex;
+  align-items: center;
+  padding: var(--lg-spacing) 0;
+}
+
+.align-center {
+  align-items: center;
+}
+.icon {
+  margin-right: 5px;
+}
+.icon-text {
+  font-size: 14px;
+  font-weight: 100;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.back-btn {
+  color: var(--primary);
+}
+
+.trash-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
