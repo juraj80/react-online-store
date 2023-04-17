@@ -46,14 +46,11 @@ body {
 }
 
 .table {
-  /* border: 1px solid black; */
   border-collapse: collapse;
   width: 100%;
 }
 
 .thead {
-  /* background-color: #a8abaf; */
-  /* color: white; */
   position: sticky;
   z-index: 100;
 }

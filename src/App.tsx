@@ -1,4 +1,3 @@
-//import "./App.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ProductsPage from "./features/product-llst/ProductsPage";
 import ShoppingCartPage from "./features/shopping-cart/ShoppingCartPage";
