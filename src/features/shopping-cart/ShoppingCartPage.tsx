@@ -64,6 +64,19 @@ const ShoppingCartPage = () => {
     }
   });
 
+  const vatElements = Object.keys(vatSums).map((vat: string) => {
+    const amount = vatSums[parseInt(vat)];
+
+    return (
+      <tr key={vat} className="tr-body-bt">
+        <td className="td col-right" colSpan={4}>
+          VAT {vat} %
+        </td>
+        <td className="td col-right">{amount.toFixed(2)} €</td>
+      </tr>
+    );
+  });
+
   const totalExclVat = cartProductItems.reduce(
     (total, item) =>
       total + (item.unitPrice * item.quantity) / (1 + item.vatRate / 100),
@@ -143,18 +156,7 @@ const ShoppingCartPage = () => {
                   </td>
                   <td className="td col-right">{totalExclVat?.toFixed(2)} €</td>
                 </tr>
-                <tr className="tr-body-bt">
-                  <td className="td col-right" colSpan={4}>
-                    VAT 10%
-                  </td>
-                  <td className="td col-right">{vatSums[10]?.toFixed(2)} €</td>
-                </tr>
-                <tr className="tr-body">
-                  <td className="td col-right" colSpan={4}>
-                    VAT 20%
-                  </td>
-                  <td className="td col-right">{vatSums[20]?.toFixed(2)} €</td>
-                </tr>
+                {vatElements}
                 <tr className="tr-body-bt">
                   <td className="td col-right" colSpan={4}>
                     Total
